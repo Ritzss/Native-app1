@@ -182,6 +182,8 @@ export const similarProducts = [
   },
 ];
 
+//* ==============================APP Starting==================================
+
 const DetailPage = ({ route, navigation }: any) => {
   const { product: productProp, similarProduct } = route.params || {};
   const [variant, setVariant] = useState(0);
@@ -372,7 +374,7 @@ const styles = StyleSheet.create({
     color: '#889551',
     
   },
-  description: { fontSize: 18 },
+  description: { fontSize: 18 ,marginInline:10},
   label: { marginTop: 10, fontFamily: 'Inria Serif' },
 
   specs: {
