@@ -38,7 +38,7 @@ export const product = {
     {
       images: [img, img],
       capacity: 500,
-      weight: 380,
+      weight: 280,
       price: 31.99,
       color: 'Antique Gold',
       mrp: 36.99,
@@ -46,7 +46,7 @@ export const product = {
     {
       images: [img],
       capacity: 750,
-      weight: 280,
+      weight: 380,
       price: 41.99,
       color: 'Antique Gold',
       mrp: 46.99,
@@ -370,6 +370,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontFamily: 'Inria Serif',
     color: '#889551',
+    
   },
   description: { fontSize: 18 },
   label: { marginTop: 10, fontFamily: 'Inria Serif' },
@@ -382,17 +383,21 @@ const styles = StyleSheet.create({
     paddingInline: 22,
     backgroundColor: '#e4e198',
     borderRadius: 12,
+    borderWidth:1,
+    boxShadow:"5px 5px 2px #0000003d",
+    marginInline:7
   },
 
   row: { flexDirection: 'row', gap: 10, marginTop: 10 },
 
-  variantText: {},
+  variantText: { color:'#979797d2' },
   activeText: { color: '#889551' },
 
   variant: {
     borderWidth: 1,
     padding: 8,
     borderRadius: 5,
+    borderColor:'#979797d2'
   },
 
   activeVariant: { borderWidth: 2, borderColor: '#889551' },
@@ -422,6 +427,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#e4e198',
     padding: 12,
     borderRadius: 10,
+    borderWidth:1,
+    boxShadow:"1px 1px 1px #0000003d"
   },
   sectionTitle2: { fontSize: 18, fontWeight: 'bold', margin: 2 },
 
