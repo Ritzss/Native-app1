@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 // screens/HomeScreen.tsx
 import { View, Text, Pressable } from 'react-native';
-import { product, similarProducts } from './productScreen';
+import { product, similarProducts } from '../data/product';
 
 export default function HomeScreen({ navigation }: { navigation: any }) {
   return (
